@@ -8,6 +8,14 @@
 # end
 # p lessthan([99, 101, 88, 4, 2000, 50])
 
+# basic array - map: double
+# def double(input)
+#   input.map do |number|
+#     number * 2
+#   end
+# end
+# p double([4, 2, 5, 99, -4])
+
 # basic array - Reverse Array
 # def reverse_array(input)
 #   index = 0

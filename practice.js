@@ -1,7 +1,7 @@
 //  basic array - select:less than 100
 function less_Than(x) {
-  less_Than.sort;
-  if (x < 100) {
+  less_Than.filter;
+  if ({ x } < 100) {
     return x;
   }
 }

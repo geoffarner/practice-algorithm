@@ -8,6 +8,20 @@
 # end
 # p lessthan([99, 101, 88, 4, 2000, 50])
 
+# basic array - Reverse Array
+# def reverse_array(input)
+#   index = 0
+#   index2 = -1
+#   while index < input.length
+#     puts input[index2]
+#     index += 1
+#     index2 -= 1
+#   end
+# end
+# reverse_array([1, 2, 3, 4, 5])
+
+# basic array - Double
+
 # basic numbers - fibonacci numbers
 # def findFib(numbers)
 #   x = 0
@@ -47,9 +61,9 @@
 #   end
 #   return true
 # end
-
 # puts is_prime(6)
-# two pointers array mesh 1
+
+# two pointers - array mesh 1
 # def twostrings(x, y)
 #   index = 0
 #   combined = []

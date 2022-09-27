@@ -16,6 +16,36 @@
 # end
 # p double([4, 2, 5, 99, -4])
 
+# basic array - array max
+# def max_array(input)
+#   index = 0
+#   index2 = 1
+#   while index < input.length
+#     if input[index] > input[index2]
+#       x = input[index]
+#       index2 += 1
+#     else
+#       x = input[index2]
+#       index += 1
+#     end
+#   end
+#   p x
+# end
+# max_array([5, 17, -4, 20, 12])
+
+# basic array - reduce product
+# def product(input)
+#   index = 1
+#   index2 = index + 1
+#   y = input[index] * input[index2]
+#   while index < input.length
+#     x = y * input[index]
+#     index += 1
+#   end
+#   p x
+# end
+# product([1, 2, 3, 4])
+
 # basic array - Reverse Array
 # def reverse_array(input)
 #   index = 0
@@ -28,7 +58,18 @@
 # end
 # reverse_array([1, 2, 3, 4, 5])
 
-# basic array - Double
+# basic array - skip it
+# def skip_it(input)
+#   index = 0
+#   array = []
+#   while index < input.length
+#     x = input[index]
+#     array << x
+#     index += x
+#   end
+#   p array
+# end
+# skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
 
 # basic numbers - fibonacci numbers
 # def findFib(numbers)
@@ -37,7 +78,8 @@
 #   (numbers - 1).times do ()
 #     next_num = x + y
 #     x = y
-#     y = next_num   end
+#     y = next_num
+#   end
 #   return x
 # end
 # p findFib(9)

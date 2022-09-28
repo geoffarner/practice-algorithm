@@ -112,6 +112,21 @@
 
 # p duplicate("abcdefghhijkkloooop")
 
+# basic string - palindrome
+# Input: “racecar”
+# Input: “baloney”
+# def palindrome(input)
+#   x = input.reverse
+#   if x == input
+#     puts "true"
+#   else
+#     puts "false"
+#   end
+# end
+
+# palindrome("racecar")
+# palindrome("baloney")
+
 # basic numbers - fibonacci numbers
 # def findFib(numbers)
 #   x = 0

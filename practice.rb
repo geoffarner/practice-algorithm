@@ -106,26 +106,48 @@
 #   input.each_char do |x|
 #     if x == previous_char
 #       return x
-#     else previous_char = x     end
+#     else previous_char = x
+#     end
 #   end
 # end
 
 # p duplicate("abcdefghhijkkloooop")
 
 # basic string - palindrome
-# Input: “racecar”
-# Input: “baloney”
-# def palindrome(input)
-#   x = input.reverse
-#   if x == input
-#     puts "true"
+# def palindrome(x)
+#   index = x.length - 1
+#   rev = ""
+#   while index >= 0
+#     rev += x[index]
+#     index -= 1
+#   end
+#   if rev == x
+#     return "true"
 #   else
-#     puts "false"
+#     return "false"
 #   end
 # end
 
-# palindrome("racecar")
-# palindrome("baloney")
+# p palindrome("racecar")
+# p palindrome("baloney")
+
+# basic string - hamming
+# def hamming(x, y)
+#   output = 0
+#   index = 0
+#   while index < x.length
+#     if x[index] != y[index]
+#       output += 1
+#       index += 1
+#     else
+#       index += 1
+#     end
+#   end
+#   return output
+# end
+
+# p hamming("ABCDEFG", "ABCXEOG")
+# p hamming("ABCDEFG", "ABCDEFG")
 
 # basic numbers - fibonacci numbers
 # def findFib(numbers)

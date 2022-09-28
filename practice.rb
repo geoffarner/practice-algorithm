@@ -95,9 +95,22 @@
 #     end
 #     index += 1
 #   end
-#   p string
+#   return string
 # end
-# caps("hello, how are your porcupines today?")
+
+# p caps("hello, how are your porcupines today?")
+
+# basic string - first duplicate character
+# def duplicate(input)
+#   previous_char = ""
+#   input.each_char do |x|
+#     if x == previous_char
+#       return x
+#     else previous_char = x     end
+#   end
+# end
+
+# p duplicate("abcdefghhijkkloooop")
 
 # basic numbers - fibonacci numbers
 # def findFib(numbers)

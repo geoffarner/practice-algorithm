@@ -70,7 +70,20 @@
 #   p array
 # end
 # skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+#####################################################
 
+# basic string - show me the money
+# def money?(input)
+#   if input["$"]
+#     puts "true"
+#   else
+#     puts "false"
+#   end
+# end
+# money?("i hate $ but i love money i know i know im crazy")
+# money?("abcdefghijklmnopqrstuvwxyz")
+
+basic string -
 # basic numbers - fibonacci numbers
 # def findFib(numbers)
 #   x = 0

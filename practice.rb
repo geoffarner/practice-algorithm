@@ -83,7 +83,22 @@
 # money?("i hate $ but i love money i know i know im crazy")
 # money?("abcdefghijklmnopqrstuvwxyz")
 
-basic string -
+# basic string - alternate capitals
+# def caps(input)
+#   index = 0
+#   string = ""
+#   while index < input.length
+#     if index.even?
+#       string << input[index]
+#     else
+#       string << input[index].upcase
+#     end
+#     index += 1
+#   end
+#   p string
+# end
+# caps("hello, how are your porcupines today?")
+
 # basic numbers - fibonacci numbers
 # def findFib(numbers)
 #   x = 0

@@ -114,6 +114,7 @@
 # p duplicate("abcdefghhijkkloooop")
 
 # basic string - palindrome
+
 # def palindrome(x)
 #   index = x.length - 1
 #   rev = ""
@@ -148,6 +149,20 @@
 
 # p hamming("ABCDEFG", "ABCXEOG")
 # p hamming("ABCDEFG", "ABCDEFG")
+
+# basic string - reverse words
+# def reverse(string)
+#   index = 0
+#   result = ""
+#   string = string.split
+#   while index < string.length
+#     result = string[index] + " " + result
+#     index += 1
+#   end
+#   return result
+# end
+
+# p reverse("popcorn is so cool isn't it yeah i thought so")
 
 # basic numbers - fibonacci numbers
 # def findFib(numbers)

@@ -163,19 +163,19 @@
 # end
 
 # p reverse("popcorn is so cool isn't it yeah i thought so")
-
-# basic numbers - fibonacci numbers
-# def findFib(numbers)
-#   x = 0
-#   y = 1
-#   (numbers - 1).times do ()
-#     next_num = x + y
-#     x = y
-#     y = next_num
+#################################################################
+# basic numbers - prime
+# def is_prime(num)
+#   index = 2
+#   while index < num
+#     if num % index == 0
+#       return false
+#     end
+#     index += 1
 #   end
-#   return x
+#   return true
 # end
-# p findFib(9)
+# puts is_prime(6)
 
 # basic numbers - fizzbuzz
 # def fizzbuzz(number)
@@ -193,19 +193,40 @@
 # end
 # fizzbuzz(25)
 
-# basic numbers - prime
-# def is_prime(num)
-#   index = 2
-#   while index < num
-#     if num % index == 0
-#       return false
-#     end
-#     index += 1
+# basic numbers - fibonacci numbers
+# def findFib(numbers)
+#   x = 0
+#   y = 1
+#   (numbers - 1).times do ()
+#     next_num = x + y
+#     x = y
+#     y = next_num
 #   end
-#   return true
+#   return x
 # end
-# puts is_prime(6)
+# p findFib(9)
 
+# basic numbers - leap year
+# def leap_year(input)
+#   if input % 400 == 0
+#     return true
+#   elsif input % 100 == 0
+#     return false
+#   elsif input % 4 == 0
+#     return true
+#   else
+#     return false
+#   end
+# end
+
+# p leap_year(1997)
+# p leap_year(1996)
+# p leap_year(1900)
+# p leap_year(2000)
+
+# basic numbers
+
+#########################################################
 # two pointers - array mesh 1
 # def twostrings(x, y)
 #   index = 0

@@ -244,6 +244,21 @@
 
 # p multiples(1..1000)
 
+# basic numbers - collatz conjecture
+# def collatz_conjecture(input)
+#   output = 0
+#   while input > 1
+#     if input.even?
+#       input = (input / 2)
+#       output += 1
+#     elsif input = input * 3 + 1
+#       output += 1
+#     end
+#   end
+#   return output
+# end
+
+# p collatz_conjecture(12)
 #########################################################
 # two pointers - array mesh 1
 # def twostrings(x, y)

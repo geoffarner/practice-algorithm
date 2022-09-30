@@ -224,7 +224,25 @@
 # p leap_year(1900)
 # p leap_year(2000)
 
-# basic numbers
+# basic numbers - multiples of 3 and 5
+# def multiples(input)
+#   new_array = input.to_a
+#   index = 0
+#   sum_array = []
+#   sum = 0
+#   while index < new_array.length
+#     if new_array[index] % 3 == 0 || new_array[index] % 5 == 0
+#       sum_array << new_array[index]
+#     end
+#     index += 1
+#   end
+#   num_sum = sum_array.each do |n|
+#     sum += n
+#   end
+#   return sum
+# end
+
+# p multiples(1..1000)
 
 #########################################################
 # two pointers - array mesh 1

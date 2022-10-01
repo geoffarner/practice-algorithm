@@ -259,6 +259,30 @@
 # end
 
 # p collatz_conjecture(12)
+
+# basic numbers - palindrome product
+def palindrome(input)
+  index = 100
+  index2 = index + 1
+  number = []
+  while index < 105
+    number << index * index2
+    p number
+    number.reverse
+    p number
+    # if number ==
+    #   pali = number
+    #     index2 += 1
+    #   else
+    #     index2 += 1
+    # end
+    index += 1
+  end
+
+  p pali
+end
+
+palindrome(100)
 #########################################################
 # two pointers - array mesh 1
 # def twostrings(x, y)

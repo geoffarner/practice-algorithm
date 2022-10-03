@@ -261,28 +261,27 @@
 # p collatz_conjecture(12)
 
 # basic numbers - palindrome product
-def palindrome(input)
-  index = 100
-  index2 = index + 1
-  number = []
-  while index < 105
-    number << index * index2
-    p number
-    number.reverse
-    p number
-    # if number ==
-    #   pali = number
-    #     index2 += 1
-    #   else
-    #     index2 += 1
-    # end
-    index += 1
-  end
+# def palindrome(input)
+#   index = 100
+#   index2 = 100
+#   number = []
+#   squared = 0
+#   while index < 105
+#     number = index * index2
 
-  p pali
-end
+#     p number
+#     flip = squared.reverse
+#     if squared == flip
+#       number << squared
+#       index2 += 1
+#     else
+#       index2 += 1
+#     end
+#     index += 1
+#   end
+# end
 
-palindrome(100)
+# palindrome(100)
 #########################################################
 # two pointers - array mesh 1
 # def twostrings(x, y)
@@ -299,3 +298,25 @@ palindrome(100)
 #   return combined
 # end
 # p twostrings(["a", "b", "c"], ["d", "e", "f", "g"])
+########################################################
+
+# basic hash - count votes
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+def count(string)
+  pres = {}
+  index = 0
+  while index < string.length
+    if pres[string[index]]
+      pres[string[index]] += 1
+    else
+      pres[string[index]] = 1
+    end
+    index += 1
+  end
+  return pres
+end
+
+count(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])

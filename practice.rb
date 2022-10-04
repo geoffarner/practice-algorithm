@@ -301,22 +301,47 @@
 ########################################################
 
 # basic hash - count votes
-# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+# def count(string)
+#   pres = {}
+#   index = 0
+#   while index < string.length
+#     if pres[string[index]]
+#       pres[string[index]] += 1
+#     else
+#       pres[string[index]] = 1
+#     end
+#     index += 1
+#   end
+#   return pres
+# end
 
-# Output: {"Dewey" => 6, "Truman" => 5}
+# p count(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
 
-def count(string)
-  pres = {}
-  index = 0
-  while index < string.length
-    if pres[string[index]]
-      pres[string[index]] += 1
-    else
-      pres[string[index]] = 1
-    end
-    index += 1
-  end
-  return pres
-end
+# basic hash - order the whole menu
+# def fatty(hash)
+#   cost = 0
+#   hash.each do |key, value|
+#     cost += value
+#   end
+#   return cost
+# end
 
-p count(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
+# p fatty({ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 })
+
+# basic hash - popular posts
+# def popular(hash)
+#   posts = []
+#   hash.each do |hash|
+#     if hash[:likes] > 999
+#       posts << hash
+#     end
+#   end
+#   return posts
+# end
+
+# p popular([
+#     { title: "Me Eating Pizza", submitted_by: "Joelle P.", likes: 1549 },
+#     { title: "i never knew how cool i was until now", submitted_by: "Lyndon Johnson", likes: 3 },
+#     { title: "best selfie evar!!!", submitted_by: "Patti Q.", likes: 1092 },
+#     { title: "Mondays are the worst", submitted_by: "Aunty Em", likes: 644 },
+#   ])

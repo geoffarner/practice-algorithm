@@ -345,3 +345,20 @@
 #     { title: "best selfie evar!!!", submitted_by: "Patti Q.", likes: 1092 },
 #     { title: "Mondays are the worst", submitted_by: "Aunty Em", likes: 644 },
 #   ])
+
+# basic hash - RNA transcription
+# def rna(string)
+#   dna = {
+#     "G" => "C",
+#     "C" => "G",
+#     "T" => "A",
+#     "A" => "U",
+#   }
+#   rna_strand = ""
+#   string.each_char do |dna_strand|
+#     rna_strand << dna[dna_strand]
+#   end
+#   return rna_strand
+# end
+
+# p rna("ACGTGGTCTTAA")

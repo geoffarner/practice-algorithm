@@ -261,27 +261,25 @@
 # p collatz_conjecture(12)
 
 # basic numbers - palindrome product
-# def palindrome(input)
+# def palindrome
 #   index = 100
-#   index2 = 100
 #   number = []
-#   squared = 0
-#   while index < 105
-#     number = index * index2
-
-#     p number
-#     flip = squared.reverse
-#     if squared == flip
-#       number << squared
-#       index2 += 1
-#     else
+#   while index < 1000
+#     index2 = 100
+#     while index2 < 1000
+#       multiplier = index * index2
+#       if multiplier.digits == multiplier.digits.reverse
+#         number << multiplier
+#       end
 #       index2 += 1
 #     end
 #     index += 1
 #   end
+
+#   return number.max
 # end
 
-# palindrome(100)
+# p palindrome
 #########################################################
 # two pointers - array mesh 1
 # def twostrings(x, y)

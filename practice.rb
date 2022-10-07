@@ -364,30 +364,59 @@
 # p rna("ACGTGGTCTTAA")
 
 # basic hash - complete the data 1
+# def complete(hash)
+#   users = {
+#     403 => "Aunty Em",
+#     231 => "Joelle P.",
+#     989 => "Lyndon Johnson",
+#     111 => "Patti Q.",
+#   }
+#   user_post = []
 
-def complete(hash)
-  users = {
-    403 => "Aunty Em",
-    231 => "Joelle P.",
-    989 => "Lyndon Johnson",
-    111 => "Patti Q.",
-  }
-  user_post = []
+#   hash.each do |key|
+#     each_post = {}
+#     each_post[:title] = key[:title]
+#     each_post[:submitted_by] = users[key[:submitted_by]]
+#     each_post[:likes] = key[:likes]
+#     user_post << each_post
+#   end
+#   return user_post
+# end
 
-  hash.each do |key|
-    each_post = {}
-    each_post[:title] = key[:title]
-    each_post[:submitted_by] = users[key[:submitted_by]]
-    each_post[:likes] = key[:likes]
-    user_post << each_post
-  end
-  return user_post
-end
+# hash = [
+#   { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
+#   { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
+#   { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
+#   { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+# ]
+# p complete(hash)
 
-hash = [
-  { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
-  { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
-  { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
-  { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
-]
-p complete(hash)
+# basic hash - anagrams
+# def anagrams(string1, string2)
+#   string1_letter = {}
+#   string2_letter = {}
+
+#   string1.each_char do |letters|
+#     if string1_letter[letters]
+#       string1_letter[letters] += 1
+#     else
+#       string1_letter[letters] = 1
+#     end
+#   end
+#   string2.each_char do |letters|
+#     if string2_letter[letters]
+#       string2_letter[letters] += 1
+#     else
+#       string2_letter[letters] = 1
+#     end
+#   end
+#   string1_letter.each do |key, value|
+#     unless string2_letter[key] && string2_letter[key] == value
+#       return false
+#     end
+#   end
+#   return true
+# end
+
+# p anagrams("silent", "listen")
+# p anagrams("frog", "bear")

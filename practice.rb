@@ -296,6 +296,28 @@
 #   return combined
 # end
 # p twostrings(["a", "b", "c"], ["d", "e", "f", "g"])
+
+# two pointers - array mesh 2
+# def array_mesh(string)
+#   index = 0
+#   combo = []
+#   while index < string.length
+#     index2 = 0
+#     while index2 < string.length
+#       if string[index] == string[index2]
+#         index2 += 1
+#       else
+#         combo << string[index] + string[index2]
+#         index2 += 1
+#       end
+#     end
+#     index += 1
+#   end
+#   return combo
+# end
+
+# p array_mesh(["a", "b", "c", "d"])
+
 ########################################################
 
 # basic hash - count votes

@@ -318,6 +318,30 @@
 
 # p array_mesh(["a", "b", "c", "d"])
 
+# two pointers - largest product
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
+
+def large(array)
+  index = 0
+  greatest_product = nil
+
+  while index < array.length
+    multiplier = index + 1
+    while multiplier < array.length
+      total = array[index] * array[multiplier]
+      if !greatest_product || total > greatest_product
+        greatest_product = total
+      end
+      multiplier += 1
+    end
+    index += 1
+  end
+  return greatest_product
+end
+
+p large([5, -2, 1, -9, -7, 2, 6])
+
 ########################################################
 
 # basic hash - count votes

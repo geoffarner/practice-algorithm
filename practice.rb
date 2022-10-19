@@ -339,6 +339,28 @@
 
 # p large([5, -2, 1, -9, -7, 2, 6])g
 
+# two pointers - two sum 1
+# def two_sum_1(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     index2 = index + 1
+#     while index2 < array.length
+#       total = array[index] + array[index2]
+#       if total == 10
+#         new_array << array[index]
+#         new_array << array[index2]
+#       end
+#       index2 += 1
+#     end
+#     index += 1
+#     p index
+#   end
+#   return new_array
+# end
+
+# p two_sum_1([2, 5, 3, 1, 0, 7, 11])
+
 ########################################################
 
 # basic hash - count votes

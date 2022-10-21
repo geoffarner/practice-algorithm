@@ -564,28 +564,27 @@
 
 ##################################################################
 # Data Transformations - ETL #1
-# Input:
+# def data_transform(array, value)
+#   output = {}
 
-# First argument: ["a", "e", "i", "o", "u"]
-# Second argument: 1
+#   array.each do |key|
+#     output[key] = value
+#   end
+#   return output
+# end
 
-# Output:
+# p data_transform(["a", "e", "i", "o", "u"], 1)
 
-# {
-# 'a' => 1,
-# 'e' => 1,
-# 'i' => 1,
-# 'o' => 1,
-# 'u' => 1
-# }
+# data transformations - flatten hash
+# def flatten(hash)
+#   output = []
+#   hash.each do |key, value|
+#     p key
+#     p value
+#   end
+#   return output
+# end
 
-def data_transform(array, value)
-  output = {}
+# p flatten({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
 
-  array.each do |key|
-    output[key] = value
-  end
-  return output
-end
-
-p data_transform(["a", "e", "i", "o", "u"], 1)
+data transformations -

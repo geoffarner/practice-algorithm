@@ -588,4 +588,4 @@ def data_transform(array, value)
   return output
 end
 
-p data_transform(["a", "e", "i", "o", "u"])
+p data_transform(["a", "e", "i", "o", "u"], 1)

@@ -579,12 +579,24 @@
 # def flatten(hash)
 #   output = []
 #   hash.each do |key, value|
-#     p key
-#     p value
+#     output << key
+#     output << value
 #   end
 #   return output
 # end
 
 # p flatten({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
 
-data transformations -
+# data transformations - flip hash
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+def flip(hash)
+  flipped = {}
+  hash.each do |key, value|
+    flipped[value] = key
+  end
+  return flipped
+end
+
+p flip({ "a" => 1, "b" => 2, "c" => 3 })

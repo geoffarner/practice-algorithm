@@ -415,6 +415,30 @@
 # p coolio([90, 20, 70, 100, 30, 80, 10])
 # p coolio([90, 20, 75, 100, 30, 80, 15])
 
+# two pointers - longest common prefix
+# def longest_prefix(array)
+#   return "" if array.empty?
+#   letters = array.first
+#   array.drop(1).each do |word|
+#     letters_chars = letters.chars
+#     word_chars = word.chars
+#     index = 0
+#     letters = ""
+#     while index < letters_chars.length || index < word_chars.length
+#       if letters_chars[index] == word_chars[index]
+#         letters << letters_chars[index]
+#       else
+#         return "" if letters_chars.empty?
+#         break
+#       end
+#       index += 1
+#     end
+#   end
+#   return letters
+# end
+
+# p longest_prefix(["flower", "flow", "flight"])
+# p longest_prefix(["dog", "racecar", "car"])
 ########################################################
 
 # basic hash - count votes
@@ -537,3 +561,31 @@
 
 # p anagrams("silent", "listen")
 # p anagrams("frog", "bear")
+
+##################################################################
+# Data Transformations - ETL #1
+# Input:
+
+# First argument: ["a", "e", "i", "o", "u"]
+# Second argument: 1
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+def data_transform(array, value)
+  output = {}
+
+  array.each do |key|
+    output[key] = value
+  end
+  return output
+end
+
+p data_transform(["a", "e", "i", "o", "u"])

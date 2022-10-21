@@ -362,43 +362,58 @@
 # p two_sum_1([2, 5, 3, 1, 0, 7, 11])
 
 # two pointers - merge sorted arrays
-# Input :
-# A : [1, 5, 8]
-# B : [6, 9]
+# def sorted_arrays(array1, array2)
+#   index = 0
+#   in_order_array = []
+#   index2 = 0
+#   while index < array1.length || index2 < array2.length
+#     unless array1[index]
+#       in_order_array << array2[index2]
+#       index2 += 1
+#       break
+#     end
+#     unless array2[index2]
+#       in_order_array << array1[index]
+#       index += 1
+#       break
+#     end
 
-# Modified A : [1, 5, 6, 8, 9]
+#     if array1[index] < array2[index2]
+#       in_order_array << array1[index]
+#       index += 1
+#     elsif array1[index] > array2[index2]
+#       in_order_array << array2[index2]
+#       index2 += 1
+#     end
+#     p index
+#     p index2
+#     p in_order_array
+#   end
+#   return in_order_array
+# end
 
-def sorted_arrays(array1, array2)
-  index = 0
-  in_order_array = []
-  index2 = 0
-  while index < array1.length || index2 < array2.length
-    unless array1[index]
-      in_order_array << array2[index2]
-      index2 += 1
-      break
-    end
-    unless array2[index2]
-      in_order_array << array1[index]
-      index += 1
-      break
-    end
+# p sorted_arrays([1, 5, 8], [6, 9])
 
-    if array1[index] < array2[index2]
-      in_order_array << array1[index]
-      index += 1
-    elsif array1[index] > array2[index2]
-      in_order_array << array2[index2]
-      index2 += 1
-    end
-    p index
-    p index2
-    p in_order_array
-  end
-  return in_order_array
-end
+# two pointers - 100 coolio array
+# def coolio(array)
+#   index = 0
+#   index2 = -1
+#   while index < array.length / 2
+#     while index2 < array.length / 2
+#       if array[index] + array[index2] == 100
+#         return true
+#       else
+#         return false
+#       end
+#       index2 -= 1
+#     end
+#     index += 1
+#   end
+# end
 
-p sorted_arrays([1, 5, 8], [6, 9])
+# p coolio([1, 2, 3, 97, 98, 99])
+# p coolio([90, 20, 70, 100, 30, 80, 10])
+# p coolio([90, 20, 75, 100, 30, 80, 15])
 
 ########################################################
 

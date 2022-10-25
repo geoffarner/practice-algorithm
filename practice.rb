@@ -588,15 +588,41 @@
 # p flatten({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
 
 # data transformations - flip hash
-# Input: {"a" => 1, "b" => 2, "c" => 3}
-# Output: {1 => "a", 2 => "b", 3 => "c"}
+# def flip(hash)
+#   flipped = {}
+#   hash.each do |key, value|
+#     flipped[value] = key
+#   end
+#   return flipped
+# end
 
-def flip(hash)
-  flipped = {}
-  hash.each do |key, value|
-    flipped[value] = key
-  end
-  return flipped
-end
+# p flip({ "a" => 1, "b" => 2, "c" => 3 })
 
-p flip({ "a" => 1, "b" => 2, "c" => 3 })
+# data transformations - ETL #2
+# def alphabetized(hash)
+#   abc = {}
+#   new_hash = {}
+#   hash.each do |key, value|
+#     value.each do |letter|
+#       abc[letter.downcase] = key
+#     end
+#   end
+#   abc.keys.sort.each do |letter|
+#     new_hash[letter] = abc[letter]
+#   end
+#   return new_hash
+# end
+
+# p alphabetized({
+#   1 => ["A", "E", "I", "O", "U"],
+# })
+# p alphabetized({
+#   1 => ["A", "E"], 2 => ["D", "G"],
+# })
+# p alphabetized({ 1 => ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
+#                  2 => ["D", "G"],
+#                  3 => ["B", "C", "M", "P"],
+#                  4 => ["F", "H", "V", "W", "Y"],
+#                  5 => ["K"],
+#                  8 => ["J", "X"],
+#                  10 => ["Q", "Z"] })

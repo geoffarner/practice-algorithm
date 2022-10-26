@@ -626,3 +626,34 @@
 #                  5 => ["K"],
 #                  8 => ["J", "X"],
 #                  10 => ["Q", "Z"] })
+
+# data transformations - complete the data 2
+def data(posts, users)
+  authors = []
+  posts_revised = {}
+  users.each do |user|
+    posts_revised[user[:user_id]] = user[:name]
+  end
+
+  posts.each do |post|
+    post_update = {}
+    post_update[:title] = post[:title]
+    post_update[:submitted_by] = posts_revised[post[:submitted_by]]
+    post_update[:likes] = post[:likes]
+    authors << post_update
+  end
+  return authors
+end
+
+posts = [
+  { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
+  { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
+  { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
+  { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+]
+users = [{ user_id: 403, name: "Aunty Em" },
+         { user_id: 231, name: "Joelle P." },
+         { user_id: 989, name: "Lyndon Johnson" },
+         { user_id: 111, name: "Patti Q." }]
+
+p data(posts, users)

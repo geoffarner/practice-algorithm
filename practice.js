@@ -24,9 +24,19 @@
 // largestNumber([5, 17, -4, 20, 12]);
 
 // basic array - reduce product
-function reduceProduct(input) {
-  temp = 1;
-  for (index = 0; index < input.length; index++) temp = temp * input[index];
-  return temp;
+// function reduceProduct(input) {
+//   temp = 1;
+//   for (index = 0; index < input.length; index++) temp = temp * input[index];
+//   return temp;
+// }
+// console.log(reduceProduct([1, 2, 3, 4]));
+
+// basic array - reverse array
+function reverse(input) {
+  temp = new Array();
+  for (index = input.length - 1; index >= 0; index--) temp.push(input[index]);
+  {
+    return temp;
+  }
 }
-console.log(reduceProduct([1, 2, 3, 4]));
+console.log(reverse([1, 2, 3, 4, 5]));

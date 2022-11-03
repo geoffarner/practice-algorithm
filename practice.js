@@ -10,3 +10,18 @@
 //   return input.map((num) => num * 2);
 // }
 // console.log(double_Numbers([4, 2, 5, 99, -4]));
+
+// basic array - array max
+// Input: [5, 17, -4, 20, 12]
+// Output: 20
+
+function largestNumber(input) {
+  temp = 0;
+  input.forEach((element) => {
+    if (temp < element) {
+      temp = element;
+    }
+  });
+  console.log(temp);
+}
+largestNumber([5, 17, -4, 20, 12]);

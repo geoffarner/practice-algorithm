@@ -628,32 +628,59 @@
 #                  10 => ["Q", "Z"] })
 
 # data transformations - complete the data 2
-def data(posts, users)
-  authors = []
-  posts_revised = {}
-  users.each do |user|
-    posts_revised[user[:user_id]] = user[:name]
-  end
+# def data(posts, users)
+#   authors = []
+#   posts_revised = {}
+#   users.each do |user|
+#     posts_revised[user[:user_id]] = user[:name]
+#   end
 
-  posts.each do |post|
-    post_update = {}
-    post_update[:title] = post[:title]
-    post_update[:submitted_by] = posts_revised[post[:submitted_by]]
-    post_update[:likes] = post[:likes]
-    authors << post_update
-  end
-  return authors
-end
+#   posts.each do |post|
+#     post_update = {}
+#     post_update[:title] = post[:title]
+#     post_update[:submitted_by] = posts_revised[post[:submitted_by]]
+#     post_update[:likes] = post[:likes]
+#     authors << post_update
+#   end
+#   return authors
+# end
 
-posts = [
-  { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
-  { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
-  { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
-  { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+# posts = [
+#   { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
+#   { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
+#   { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
+#   { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+# ]
+# users = [{ user_id: 403, name: "Aunty Em" },
+#          { user_id: 231, name: "Joelle P." },
+#          { user_id: 989, name: "Lyndon Johnson" },
+#          { user_id: 111, name: "Patti Q." }]
+
+# p data(posts, users)
+
+# data transformations - book organizers
+# def book_organizers(title, author, year)
+#   authors = []
+#   books.each do |name|
+#     authors[name[:author]] = name[:author]
+#   end
+#   books.each do |author|
+#     new_sort = {}
+#     new_sort[:title] = author[:title]
+#     new_sort[:year] = author[:year]
+#     authors << new_sort
+#   end
+#   return authors
+# end
+
+books = [
+  { title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+  { title: "1984", author: "George Orwell", year: 1949 },
+  { title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+  { title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+  { title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 },
 ]
-users = [{ user_id: 403, name: "Aunty Em" },
-         { user_id: 231, name: "Joelle P." },
-         { user_id: 989, name: "Lyndon Johnson" },
-         { user_id: 111, name: "Patti Q." }]
 
-p data(posts, users)
+p book_organizers(books)

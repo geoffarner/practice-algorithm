@@ -12,16 +12,21 @@
 // console.log(double_Numbers([4, 2, 5, 99, -4]));
 
 // basic array - array max
-// Input: [5, 17, -4, 20, 12]
-// Output: 20
+// function largestNumber(input) {
+//   temp = 0;
+//   input.forEach((element) => {
+//     if (temp < element) {
+//       temp = element;
+//     }
+//   });
+//   console.log(temp);
+// }
+// largestNumber([5, 17, -4, 20, 12]);
 
-function largestNumber(input) {
-  temp = 0;
-  input.forEach((element) => {
-    if (temp < element) {
-      temp = element;
-    }
-  });
-  console.log(temp);
+// basic array - reduce product
+function reduceProduct(input) {
+  temp = 1;
+  for (index = 0; index < input.length; index++) temp = temp * input[index];
+  return temp;
 }
-largestNumber([5, 17, -4, 20, 12]);
+console.log(reduceProduct([1, 2, 3, 4]));

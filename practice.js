@@ -32,11 +32,25 @@
 // console.log(reduceProduct([1, 2, 3, 4]));
 
 // basic array - reverse array
-function reverse(input) {
-  temp = new Array();
-  for (index = input.length - 1; index >= 0; index--) temp.push(input[index]);
-  {
-    return temp;
+// function reverse(input) {
+//   temp = new Array();
+//   for (index = input.length - 1; index >= 0; index--) temp.push(input[index]);
+//   {
+//     return temp;
+//   }
+// }
+// console.log(reverse([1, 2, 3, 4, 5]));
+
+// basic array - skip it
+function skipIt(input) {
+  skip = new Array();
+  index = 0;
+  while (index < input.length) {
+    x = input[index];
+    skip.push(x);
+    index += x;
   }
+  return skip;
 }
-console.log(reverse([1, 2, 3, 4, 5]));
+
+console.log(skipIt([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]));

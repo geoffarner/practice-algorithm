@@ -659,19 +659,9 @@
 # p data(posts, users)
 
 # data transformations - book organizers
-# def book_organizers(title, author, year)
-#   authors = []
-#   books.each do |name|
-#     authors[name[:author]] = name[:author]
-#   end
-#   books.each do |author|
-#     new_sort = {}
-#     new_sort[:title] = author[:title]
-#     new_sort[:year] = author[:year]
-#     authors << new_sort
-#   end
-#   return authors
-# end
+def book_organizers(books)
+  return books[:author]
+end
 
 books = [
   { title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
